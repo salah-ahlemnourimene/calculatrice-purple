@@ -1,3 +1,4 @@
+/* Fond général */
 body {
   background: #f4f0fa;
   font-family: 'Segoe UI', sans-serif;
@@ -8,63 +9,73 @@ body {
   margin: 0;
 }
 
+/* Bloc calculatrice */
 .calculatrice {
-  background: #dcd0ff;
-  border-radius: 20px;
-  padding: 20px;
-  width: 320px;
-  box-shadow: 0 12px 30px rgba(128, 0, 128, 0.3);
+  background: #e9dcf9;
+  border-radius: 25px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 15px 30px rgba(150, 100, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* Affichage */
 .affichage {
   background: #a074f8;
   color: white;
-  font-size: 2.2em;
-  padding: 18px;
-  border-radius: 12px;
+  font-size: 2.5em;
+  padding: 20px;
+  border-radius: 15px;
   text-align: right;
-  margin-bottom: 20px;
-  box-shadow: inset 0 0 8px #845ec2;
+  box-shadow: inset 0 0 10px #845ec2;
 }
 
+/* Grille des boutons */
 .touches {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 15px;
 }
 
+/* Style général des boutons */
 button {
   padding: 18px;
   font-size: 1.4em;
   border: none;
-  border-radius: 12px;
-  background: #e5d3f2;
-  color: #4b0082;
+  border-radius: 15px;
+  background: #ecdff9;
+  color: #5a189a;
   cursor: pointer;
-  transition: all 0.15s ease;
-  box-shadow: 0 3px 5px rgba(128, 0, 128, 0.2);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(150, 100, 255, 0.2);
 }
 
+/* Hover général */
 button:hover {
-  background: #d1b3ff;
+  background: #d6c4f0;
 }
 
-button:active {
-  transform: scale(0.96);
-  background: #b188f5;
-}
-
+/* Boutons opérations */
 .op {
   background: #c084fc;
   color: white;
 }
 
+/* Bouton égal */
+.egal {
+  background: #7b2cbf;
+  color: white;
+}
+
+/* Bouton AC */
 .ac {
   background: #f06292;
   color: white;
 }
 
-.egal {
-  background: #9c27b0;
-  color: white;
+/* Effet bouton cliqué */
+button:active {
+  transform: scale(0.95);
 }
